@@ -179,6 +179,22 @@ If the parameter is a Storyboard file, then this file will be used. If a path to
 $ natalie.swift NatalieExample/NatalieExample/Base.lproj/Main.storyboard > NatalieExample/NatalieExample/Storyboards.swift
 ```
 
+### Additional imports
+
+You can specify a path to a JSON file that will contain all the additional imports that you want to be performed in the resulting `Storyboards.swift`:
+
+In `natalie-imports.json`:
+
+```
+["FlatUIKit"]
+```
+
+Usage:
+
+```
+$ natalie.swift <path_to_project> natalie-imports.json
+```
+
 ## Author and contact
 Marcin Krzyżanowski 
 
